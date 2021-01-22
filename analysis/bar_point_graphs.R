@@ -7,8 +7,7 @@ if (!"ggplot2" %in% .packages()) library(ggplot2)
 if (!"purrr" %in% .packages()) library(purrr)
 
 # 1 Source functions and global theme -------------------------------------
-source("functions/bar_graph_func.R")
-source("functions/point_graph_func.R")
+source("functions/bar_point_graph_func.R")
 source("analysis/graph_theme.R")
 
 # 2 Data -----------------------------------------------------------------
