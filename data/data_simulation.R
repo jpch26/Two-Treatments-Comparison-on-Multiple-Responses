@@ -1,6 +1,7 @@
 # Data Simulation  --------------------------------------------------------
 
-library(purrr)
+if (!"purrr" %in% .packages()) library(purrr)
+if (!"stringi" %in% .packages()) library(stringi)
 
 set.seed(5) # For reproducibility
 
@@ -71,23 +72,44 @@ main_data <- data.frame(
 
 write.csv(main_data, file = "data/main_data.csv", row.names = FALSE)
 
-# Data variables information ----------------------------------------------
+# Responses information ----------------------------------------------
 
-# Variables code
-var_code <- c("IND", "DT", "WG", "CH", "GL", "PD", "PI")
+# Response code
+resp_code <- c("WG", "CH", "GL", "PD", "PI")
 
-# Variables description
-var_desc <- c("Individual code", "Diet treatment", "Weight", "Total cholesterol", 
+# Response description
+resp_desc <- c("Weight", "Total cholesterol", 
               "Glucose levels", "apoD levels", "apoAI levels") 
 
-# Variables units
-var_units <- c("-", "1, 2", "g", "mg/dL", "mg/dL", 
+# Response units
+resp_units <- c("g", "mg/dL", "mg/dL", 
                "Pixel intensity", "Relative expression")
 
-var_inf <- data.frame(
-  Code    = var_code,
-  Varible = var_desc,
-  Units   = var_units
+resp_inf <- data.frame(
+  Code  = resp_code,
+  Description = resp_desc,
+  Units = resp_units
 )
 
-write.csv(var_inf, file = "data/data_info.csv", row.names = FALSE)
+write.csv(resp_inf, file = "data/response_info.csv", row.names = FALSE)
+
+# Variables info ----------------------------------------------------------
+
+# Variables code
+var_code <- c("IND_C", "DT")
+
+# Variables description
+var_desc <- c("Mouse individual code", "Diet type")
+
+# Variables units
+var_units  <- c("Not applicable", "1: extrange fat, 2: regular")
+
+var_inf <- data.frame(
+  Code = var_code,
+  Description = var_desc,
+  Units = var_units
+)
+
+write.csv(var_inf, file = "data/variable_info.csv", row.names = FALSE)
+
+
