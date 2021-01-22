@@ -1,0 +1,6 @@
+"Code","Description","Units"
+"WG","Weight","g"
+"CH","Total cholesterol","mg/dL"
+"GL","Glucose levels","mg/dL"
+"PD","apoD levels","Pixel intensity"
+"PI","apoAI levels","Relative expression"
