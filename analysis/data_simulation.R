@@ -96,13 +96,13 @@ write.csv(resp_inf, file = "data/response_info.csv", row.names = FALSE)
 # Variables info ----------------------------------------------------------
 
 # Variables code
-var_code <- c("IND_C", "DT")
+var_code <- c("IND", "DT")
 
 # Variables description
 var_desc <- c("Mouse individual code", "Diet type")
 
 # Variables units
-var_units  <- c("Not applicable", "1: extrange fat, 2: regular")
+var_units  <- c("Not applicable", "1: high fat/cholesterol diet, 2: regular")
 
 var_inf <- data.frame(
   Code = var_code,
