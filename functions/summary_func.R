@@ -17,22 +17,3 @@ sum_table <- function(data = NULL, group_factor, response) {
   
   return(sum)
 }
-
-# Summaries function -------------------------------------------------------
-
-sum_tables <- function(response_names = "", data = NULL, 
-                       group_factor) {
-  
-  tables <- map(
-    response_names, 
-    ~sum_table(
-      data, 
-      response = .data[[.x]], 
-      group_factor = {{ group_factor }}
-      )
-    )
-  
-  return(tables)
-}
-
-
