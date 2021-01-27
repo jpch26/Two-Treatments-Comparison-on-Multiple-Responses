@@ -6,11 +6,31 @@
 
 # Packages
 
-library(dplyr)   # To summarize data
+library(dplyr)   # To summarize data and another tasks
 library(ggplot2) # To make graphs
-library(purrr)   # Iteration issues
+library(purrr)   # Easier iteration
+library(ggpubr)  # To combine gg plots
 library(stringi) # To assign random strings on data simulation
 
-# 1 Simulating the data
+# 1 Simulate the  data
+source("analysis/data_simulation.R")
 
-source("data/data_simulation.R")
+# 2 T-test to compare response means between treatments
+source("analysis/t_test_analysis.R")
+
+# 3 Summary for each response grouping by treatment
+source("analysis/summaries.R")
+
+# 4 Graphs for each response grouping by treatment 
+
+source("analysis/graph_theme.R")
+source("analysis/bar_point_graphs.R")
+source("analysis/bar_graphs.R")
+source("analysis/point_graphs.R")
+
+# 5 Source presentation document files. You need 'rmarkdown' package
+
+rmarkdown::render("presentation_github.Rmd", output_file = "README")
+
+# 6 Session Info 
+capture.output(sessionInfo(), file = "Session_Info.txt")
