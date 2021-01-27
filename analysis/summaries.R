@@ -21,8 +21,7 @@ resp_code <- resp_info$Code
 
 # 3 Summary for each response --------------------------------------------- 
 
-# 3.2 Use sum_tables function to make summaries for all responses
-# summaries <- sum_tables(resp_names, data = main_data, group_factor = DT)
+# 3.1 Use sum_tables function to make summaries for all responses
 
 sum_ls <- vector(mode = "list", length = length(resp_code))
 
