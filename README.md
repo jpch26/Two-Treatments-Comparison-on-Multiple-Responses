@@ -2719,7 +2719,7 @@ first plot (the Weight plot). You can see it by typing:
 graphs[[1]]
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](README_files/figure-gfm/weigth%20graph-1.png)<!-- -->
 
 Finally I saved all the plot on the graphs folder using the code:
 

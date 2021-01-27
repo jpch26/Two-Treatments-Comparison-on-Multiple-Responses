@@ -594,7 +594,7 @@ resp_names
 
 On the first iteration, the elements corresponding to i = 1 in the objects `summaries`, `resp_units` and `resp_names`, are used to make the first plot (the Weight plot). You can see it by typing:  
 
-```{r}
+```{r weigth graph}
 graphs[[1]]
 ```
 
