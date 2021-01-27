@@ -4,7 +4,7 @@
 # simulation. 
 
 # Presentation documents and session info file names
-## document_and_session <- c()
+document_and_session <- c("README.md", "Session_Info.txt")
 
 # Data outputs file names from analysis scripts
 analysis_outputs <- list.files("data")
@@ -13,6 +13,6 @@ analysis_outputs <- list.files("data")
 graph_outputs <- list.files("graphs")
 
 # Delete the specified files 
-## file.remove(document_and_session)
+file.remove(document_and_session)
 file.remove(paste0("data/", analysis_outputs))
 file.remove(paste0("graphs/", graph_outputs))
