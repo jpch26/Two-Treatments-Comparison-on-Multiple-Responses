@@ -27,7 +27,7 @@ resp_code <- resp_info$Code
 resp_units <- resp_info$Units
 
 # 3.2 Response names for main titles
-resp_names <- resp_info$Varible
+resp_names <- resp_info$Description
 
 # 3.3 Apply point_graph function to each response
 graphs <- vector(mode = "list", length = length(resp_code))
