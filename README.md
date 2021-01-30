@@ -1,4 +1,4 @@
-Two Treatments on Multiple Responses
+R in the Lab: Two Treatments on Multiple Responses
 ================
 
 A complete R tutorial about how to perform a comparison analysis between

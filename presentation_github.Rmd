@@ -1,5 +1,5 @@
 ---
-title: "Two Treatments on Multiple Responses"
+title: "R in the Lab: Two Treatments on Multiple Responses"
 output: github_document
 always_allow_html: true
 ---
