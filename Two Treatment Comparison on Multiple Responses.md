@@ -2701,7 +2701,7 @@ first plot (the Weight plot). You can see it by typing:
 graphs[[1]]
 ```
 
-![](Two%20Treatment%20Comparison%20on%20Multiple%20Responses_files/figure-gfm/weigth%20graph-1.png)<!-- -->
+![](TWOTRE~1/figure-gfm/weight%20graph-1.png)<!-- -->
 
 Finally I saved all the plot on the graphs folder using the code:
 
@@ -2736,7 +2736,7 @@ ggsave(filename = "graphs/barpoint_figure.jpeg", plot = figure,
 figure
 ```
 
-![](Two%20Treatment%20Comparison%20on%20Multiple%20Responses_files/figure-gfm/show%20figure-1.png)<!-- -->
+![](TWOTRE~1/figure-gfm/show%20figure-1.png)<!-- -->
 
 Note that I saved this plot as “bar\_point\_figure.jpeg” in the graphs
 folder. Instead of the main titles in each plot, alternatively you can
