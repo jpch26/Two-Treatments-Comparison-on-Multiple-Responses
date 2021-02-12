@@ -12,7 +12,7 @@ If you have cloned this repository and want to run this analysis from
 scratch first run erase\_all\_outputs.R script and then run Main.R
 script o whichever script you want.
 
-The image folder contains images that I’ve used on this presentation: [Two Treatment Comparison on Multiple Responses](https://github.com/jpch26/Two-Treatments-Comparison-on-Multiple-Responses/blob/main/Two%20Treatment%20Comparison%20on%20Multiple%20Responses.md)
+You can read the presentation for this tutorial by clicking on: [Two Treatment Comparison on Multiple Responses](https://github.com/jpch26/Two-Treatments-Comparison-on-Multiple-Responses/blob/main/Two%20Treatment%20Comparison%20on%20Multiple%20Responses.md)
 
 Juan Pablo Carreón Hidalgo
 
